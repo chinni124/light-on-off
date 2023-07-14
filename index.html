@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="on">on </button>
+    <img id="image" src="./off.png" alt="">
+    <button id="off">off </button>
+    <script>
+        const image = document.getElementById("image");
+
+        document.getElementById('on').addEventListener('click',(e)=>{
+           image.src = 'on.png'
+        })
+        
+        document.getElementById('off').addEventListener('click',(e)=>{
+           image.src = 'off.png'
+        })
+
+    </script>
+</body>
+</html>
